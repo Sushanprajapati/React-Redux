@@ -1,10 +1,10 @@
-const isLogged = (state = false , action) => {
+const LoggedReducer = (state = false , action) => {
     switch(action.type){
-        case "SIGN_UP":
-            return !state
+        case 'SIGN_IN':
+            return !state;
         default:
-            return
+            return state;
     }
-}
+};
 
-export default isLogged;
+export default LoggedReducer;
